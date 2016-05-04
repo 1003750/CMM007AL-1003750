@@ -27,18 +27,20 @@ h2 {
 
 a {
     font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 
 /* body */
 p {
     font-weight: 400;
-    font-size: 14px;
+    font-size: 12px;
 }
 /* GENERAL TEXT STYLING END */
 
+
 /* NAVIGATION STYLING START */
+
 nav>ul {
     list-style-type: none;
     margin: 0;

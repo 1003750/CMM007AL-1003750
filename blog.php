@@ -28,7 +28,8 @@
     include ("db_connect.php");
 
     if(isset($_GET['category'])) {
-        echo "<h4>{'category'}</h4>";
+        $category = $_GET['category'];
+        echo "<h4>Currently viewing all blog posts in category: {$category}</h4>";
     }
 
     ?>

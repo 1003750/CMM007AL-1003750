@@ -15,11 +15,11 @@
     <!-- NAVIGATION BAR START -->
     <nav id="nav">
         <ul>
-            <li><a href="blog.html">All Blog Items</a></li>
-            <li><a href="blog.html">Work Blog Items</a></li>
-            <li><a href="blog.html">University Blog Items</a></li>
-            <li><a href="blog.html">Family Blog Items</a></li>
-            <li><a href="add.html">Insert Blog Items</a></li>
+            <li><a href="blog.php">All Blog Items</a></li>
+            <li><a href="blog.php?category=Work">Work Blog Items</a></li>
+            <li><a href="blog.phpcategory=University">University Blog Items</a></li>
+            <li><a href="blog.phpcategory=Family">Family Blog Items</a></li>
+            <li><a href="add.php">Insert Blog Items</a></li>
         </ul>
     </nav>
     <!-- NAVIGATION BAR END -->

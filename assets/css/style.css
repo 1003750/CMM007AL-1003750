@@ -8,6 +8,14 @@ body {
     background-color: #A4BB83;
 }
 
+header {
+    background-color: #74914D;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
 /* GENERAL TEXT STYLING START */
 body {
     font-family: 'Roboto', sans-serif;
@@ -139,3 +147,13 @@ textarea {
     padding-right: 10px;
 }
 /*BLOG DISPLAY END*/
+
+
+/* FOOTER STYLING*/
+footer {
+    background-color: #74914D;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>myBlog web page</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+<!-- HEADER START -->
+<header>
+    <h1>myBlog</h1>
+    <h2>because the internet needs to know what I think</h2>
+
+    <!-- NAVIGATION BAR START -->
+    <nav id="nav">
+        <ul>
+            <li><a href="blog.php">All Blog Items</a></li>
+            <li><a href="blog.php?category=Work">Work Blog Items</a></li>
+            <li><a href="blog.phpcategory=University">University Blog Items</a></li>
+            <li><a href="blog.phpcategory=Family">Family Blog Items</a></li>
+            <li><a href="add.php">Insert Blog Items</a></li>
+        </ul>
+    </nav>
+    <!-- NAVIGATION BAR END -->
+
+</header>
+<!-- HEADER END -->
+
+
+
+<!-- MAIN START -->
+<main>
+    <!-- main content -->
+    <div id="content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pharetra nibh eget condimentum semper. Ut fermentum tellus feugiat, laoreet metus ac, posuere ligula. Nullam et posuere elit. Donec dui ligula, pretium tempus sem ut, semper euismod urna. Cras rhoncus consectetur tortor id luctus. Maecenas suscipit vulputate ex, ut imperdiet dolor fringilla id. Pellentesque rhoncus nibh at rhoncus lobortis. Aliquam pretium tellus at erat convallis, nec consectetur lectus porta. Nulla sit amet nulla euismod, suscipit turpis quis, finibus tortor. Donec luctus dapibus ex id pharetra. In sed vestibulum elit. In maximus magna et tincidunt molestie. Mauris in nulla enim. Cras bibendum leo nec diam elementum finibus et vitae tellus. </p>
+    </div>
+
+    <!-- section for displaying the image -->
+    <aside>
+        <img src="assets/images/blog.png"alt="Blog Image" id="blogimage">
+    </aside>
+</main>
+<!-- MAIN END -->
+
+
+<!-- FOOTER START -->
+<footer>
+    <p>Designed by Rita Avota, 2016</p>
+</footer>
+<!-- FOOTER END -->
+
+</body>
+</html>

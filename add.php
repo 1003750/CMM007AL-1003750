@@ -36,6 +36,7 @@
         //includes connection to the database
             include ("db_connect.php");
 
+            // logic for dealing with form
             if ($_SERVER['REQUEST_METHOD'] === 'GET') {
             ?>
             <!-- FORM START -->
@@ -65,12 +66,14 @@
             <?
             }
 
+            // gathers and sends the information from the form to the database
             elseif ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 $entryTitle = $_POST['entryTitle'];
                 $entrySummary = $_POST['entrySummary'];
                 $category = $_POST['category'];
                 $submitter = $_POST['submitter'];
 
+                // submitting the information into the database
                 $sql = "INSERT INTO blogview (entryTitle, entrySummary, category, submitter) VALUES ('$entryTitle', '$entrySummary', '$category', '$submitter')";
 
                 if ($result = $db->query($sql)) {
@@ -78,9 +81,11 @@
                 }
                 else printf("Couldn't add blog");
 
+                // redirect to blog.php
                 header('Location:blog.php');
             }
 
+            // otherwise redirect to index.php
             else {
                 header('Location:index.php');
             }

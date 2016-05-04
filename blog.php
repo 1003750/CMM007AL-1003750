@@ -24,18 +24,15 @@
     </nav>
     <!-- NAVIGATION BAR END -->
 
+    <!-- If viewing blog posts by specific category, then this statement is added in header -->
     <?php
     include ("db_connect.php");
 
     if(isset($_GET['category'])) {
         $category = $_GET['category'];
-        echo "<h4>Currently viewing all blog posts in category: {$category}</h4>";
+        echo "<h3>Currently viewing all blog posts in category: {$category}</h3>";
     }
-
     ?>
-
-    <h3></h3>
-
 </header>
 <!-- HEADER END -->
 
@@ -46,17 +43,21 @@
     <!-- MAIN PARAGRAPH START -->
     <div id = "showblog">
 
+        <!-- Code that deals with fetching information from database -->
         <?php
         include ("db_connect.php");
 
+        // if specific category is requested, then only that information is filtered and displayed
         if(isset($_GET['category'])) {
             $category = $_GET['category'];
             $sql_query = "SELECT *FROM blogview WHERE category = '$category'";
         }
+        // if no specific category is requested, all items are fetched
         else {
             $sql_query = "SELECT * FROM blogview";
         }
 
+        // all of the fetched information is printed though the use of a while loop
         $result = $db->query($sql_query);
         while($row = $result->fetch_array()) {
             $entryTitle = $row['entryTitle'];

@@ -39,10 +39,10 @@
 
         if(isset($_GET['category'])) {
             $category = $_GET['category'];
-            $sql_query = "SELECT *FROM viewBlog WHERE category = '$category'";
+            $sql_query = "SELECT *FROM blogview WHERE category = '$category'";
         }
         else {
-            $sql_query = "SELECT * FROM viewBlog";
+            $sql_query = "SELECT * FROM blogview";
         }
 
         $result = $db->query($sql_query);

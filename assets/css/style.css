@@ -34,7 +34,7 @@ a {
 
 
 /* body */
-p {
+p, h3, h4 {
     font-weight: 400;
     font-size: 12px;
 }
@@ -128,3 +128,14 @@ textarea {
 }
 
 /* FORM DISPLAY END */
+
+
+/*BLOG DISPLAY START*/
+#showblog{
+    width: 60%;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+/*BLOG DISPLAY END*/

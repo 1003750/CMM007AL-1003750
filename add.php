@@ -73,6 +73,11 @@
 
                 $sql = "INSERT INTO blogview (entryTitle, entrySummary, category, submitter) VALUES ('$entryTitle', '$entrySummary', '$category', '$submitter')";
 
+                if ($result = $db->query($sql)) {
+                    printf("New blog added");
+                }
+                else printf("Couldn't add blog");
+
                 header('Location:blog.php');
             }
 

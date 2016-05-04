@@ -118,10 +118,14 @@ label{
     text-align: left;
 }
 
-input, textarea, select, option {
+input, textarea {
     display: inline-block;
     float: left;
     width: 200px;
+}
+
+option {
+    width: 175px;
 }
 
 #submit{

@@ -11,6 +11,8 @@ body {
 /* GENERAL TEXT STYLING START */
 body {
     font-family: 'Roboto', sans-serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 /* Header */
 h1 {
@@ -92,14 +94,37 @@ main {
     width: 200px;
 }
 
-
 /* MAIN SECTION END */
 
 
 
+/* FORM DISPLAY START */
 
+label{
+    display: inline-block;
+    float: left;
+    clear: left;
+    width: 120px;
+    text-align: left;
+}
 
+input {
+    display: inline-block;
+    float: left;
+    width: 200px;
+}
 
+option {
+    width: 175px;
+}
 
+textarea {
+    width: 200px;
+}
 
-/*  */
+#submit{
+    width: 100px;
+    float: right;
+}
+
+/* FORM DISPLAY END */

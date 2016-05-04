@@ -2,9 +2,71 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>myBlog web page</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
+<!-- HEADER START -->
+<header>
+    <h1>myBlog</h1>
+    <h2>because the internet needs to know what I think</h2>
+
+    <!-- NAVIGATION BAR START -->
+    <nav id="nav">
+        <ul>
+            <li><a href="blog.html">All Blog Items</a></li>
+            <li><a href="blog.html">Work Blog Items</a></li>
+            <li><a href="blog.html">University Blog Items</a></li>
+            <li><a href="blog.html">Family Blog Items</a></li>
+            <li><a href="add.html">Insert Blog Items</a></li>
+        </ul>
+    </nav>
+    <!-- NAVIGATION BAR END -->
+
+</header>
+<!-- HEADER END -->
+
+
+
+<!-- MAIN START -->
+<main>
+
+    <!-- FORM START -->
+    <form>
+        <fieldset>
+            <label for="entryTitle">Entry Title</label>
+            <input type="text" name="entryTitle" required>
+            <br>
+            <label for="entrySummary">Entry Summary</label>
+            <textarea name="BugSummary" maxlength="500" required></textarea>
+            <br>
+            <label for="Category">Category</label>
+            <select name="BugCategory" required>
+                <option value="">Select Bug Category</option>
+                <option value="politics">Android</option>
+                <option value="sport">iOS</option>
+                <option value="technology">Windows</option>
+            </select>
+            <br>
+            <label for="submittedBy">Submitted By</label>
+            <input type="text" name="submittedBy" required>
+            <br>
+            <input type="submit" value="Submit" id="submit">
+
+        </fieldset>
+    </form>
+    <!-- FORM END -->
+
+</main>
+<!-- MAIN END -->
+
+
+<!-- FOOTER START -->
+<footer>
+    <p>Designed by Rita Avota, 2016</p>
+</footer>
+<!-- FOOTER END -->
 
 </body>
 </html>

@@ -33,10 +33,39 @@
 <main>
     <!-- MAIN PARAGRAPH START -->
     <div id = "showblog">
+
+        <?php
+        include ("db_connect.php");
+
+        if(isset($_GET['category'])) {
+            $category = $_GET['category'];
+            $sql_query = "SELECT *FROM bugs WHERE category = '$category'";
+        }
+        else {
+            $sql_query = "SELCECT * FROM viewBlog";
+        }
+
+        $result = $db->query($sql_query);
+        while($row = $result->fetch_array()) {
+            $entryTitle = $row['entryTitle'];
+            $entrySummary = $row['entrySummary'];
+            $category = $row['category'];
+            $submitter = $row['submitter'];
+        }
+
+        ?>
+
         <h3>Today at work by Adam</h3>
         <h4>Work</h4>
         <p>Today I went to work and did lots of very complicated coding things. I was very pleased that I managed to finish them all.</p>
         <hr>
+
+
+
+
+
+
+
     </div>
     <!-- MAIN PARAGRAPH END -->
 </main>

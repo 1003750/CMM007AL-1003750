@@ -24,6 +24,17 @@
     </nav>
     <!-- NAVIGATION BAR END -->
 
+    <?php
+    include ("db_connect.php");
+
+    if(isset($_GET['category'])) {
+        echo "<h4>{'category'}</h4>";
+    }
+
+    ?>
+
+    <h3></h3>
+
 </header>
 <!-- HEADER END -->
 

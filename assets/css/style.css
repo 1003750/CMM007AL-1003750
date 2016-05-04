@@ -26,18 +26,18 @@ h2 {
 }
 
 /* NAVIGATION START */
-nav>ul {
+#nav nav>ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
 }
 
-nav>ul>li {
+#nav nav>ul>li {
     float: left;
 }
 
-nav>ul>li a {
+#nav nav>ul>li a {
     display: block;
     color: #000000;
     text-align: center;
@@ -45,7 +45,7 @@ nav>ul>li a {
     text-decoration: none;
 }
 
-li a:hover {
+#nav li a:hover {
     color: #374525;
 }
 

@@ -16,11 +16,13 @@ body {
 h1 {
     font-weight: 700;
     font-size: 25px;
+    margin: 0;
 }
 
 h2 {
     font-weight: 500;
     font-size: 20px;
+    margin: 0 0 40px 0;
 }
 
 /* NAVIGATION START */

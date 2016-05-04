@@ -17,8 +17,8 @@
         <ul>
             <li><a href="blog.php">All Blog Items</a></li>
             <li><a href="blog.php?category=Work">Work Blog Items</a></li>
-            <li><a href="blog.phpcategory=University">University Blog Items</a></li>
-            <li><a href="blog.phpcategory=Family">Family Blog Items</a></li>
+            <li><a href="blog.php?category=University">University Blog Items</a></li>
+            <li><a href="blog.php?category=Family">Family Blog Items</a></li>
             <li><a href="add.php">Insert Blog Items</a></li>
         </ul>
     </nav>

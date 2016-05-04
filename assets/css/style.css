@@ -63,12 +63,13 @@ nav>ul>li {
     float: left;
 }
 
-/* Centre text, add padding, remove underline */
+/* Centre text, add padding, remove underline, set colour to black */
 nav>ul>li a {
     display: block;
     text-align: center;
     padding: 5px 5px;
     text-decoration: none;
+    color: #000000;
 }
 
 /* Change the colour when hovering over link */
@@ -118,7 +119,7 @@ label{
     text-align: left;
 }
 
-input, textarea {
+input {
     display: inline-block;
     float: left;
     width: 200px;
@@ -126,6 +127,10 @@ input, textarea {
 
 option {
     width: 175px;
+}
+
+textarea {
+    width: 200px;
 }
 
 #submit{

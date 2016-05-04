@@ -78,11 +78,11 @@ main {
     justify-content: flex-start;
 }
 
-
-
-
-/* MAIN SECTION END */
-
+/*setting padding for content*/
+#content {
+    padding-right: 20px;
+    padding-left: 20px;
+}
 
 /* Image sizing */
 #blogimage {
@@ -92,6 +92,12 @@ main {
     float: right;
     width: 200px;
 }
+
+
+/* MAIN SECTION END */
+
+
+
 
 
 

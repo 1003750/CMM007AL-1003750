@@ -42,7 +42,7 @@
             $sql_query = "SELECT *FROM viewBlog WHERE category = '$category'";
         }
         else {
-            $sql_query = "SELCECT * FROM viewBlog";
+            $sql_query = "SELECT * FROM viewBlog";
         }
 
         $result = $db->query($sql_query);

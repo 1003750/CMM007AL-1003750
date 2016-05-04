@@ -84,7 +84,8 @@ main {
 
 /* Image sizing */
 #blogimage {
-    margin-left: 18px;
+    padding-right: 10px;
+    padding-left: 10px;
     margin-top: 18px;
     float: right;
     width: 200px;

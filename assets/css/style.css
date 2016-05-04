@@ -4,10 +4,13 @@ body {
     max-width: 960px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
     padding-left: 20px;
     background-color: #A4BB83;
 }
 
+/* Setting colour and padding for header */
 header {
     background-color: #74914D;
     padding-top: 20px;
@@ -19,8 +22,6 @@ header {
 /* GENERAL TEXT STYLING START */
 body {
     font-family: 'Roboto', sans-serif;
-    margin-top: 20px;
-    margin-bottom: 20px;
 }
 /* Header */
 h1 {
@@ -35,13 +36,12 @@ h2 {
     margin: 0 0 0 0; /*getting rid of space between h1 and h2*/
 }
 
+/* Main */
 a {
     font-weight: 400;
     font-size: 14px;
 }
 
-
-/* body */
 p, h3, h4 {
     font-weight: 400;
     font-size: 12px;
@@ -50,7 +50,7 @@ p, h3, h4 {
 
 
 /* NAVIGATION STYLING START */
-
+/* Removing bullet points */
 nav>ul {
     list-style-type: none;
     margin: 0;
@@ -58,18 +58,20 @@ nav>ul {
     overflow: hidden;
 }
 
+/* Float all menu items to the left */
 nav>ul>li {
     float: left;
 }
 
+/* Centre text, add padding, remove underline */
 nav>ul>li a {
     display: block;
-    color: #000000;
     text-align: center;
     padding: 5px 5px;
     text-decoration: none;
 }
 
+/* Change the colour when hovering over link */
 li a:hover {
     color: #374525;
 }
@@ -107,7 +109,7 @@ main {
 
 
 /* FORM DISPLAY START */
-
+/*  */
 label{
     display: inline-block;
     float: left;
@@ -116,17 +118,9 @@ label{
     text-align: left;
 }
 
-input {
+input, textarea, option {
     display: inline-block;
     float: left;
-    width: 200px;
-}
-
-option {
-    width: 175px;
-}
-
-textarea {
     width: 200px;
 }
 
@@ -153,6 +147,7 @@ textarea {
 
 
 /* FOOTER STYLING*/
+/* Setting colour and padding for footer */
 footer {
     background-color: #74914D;
     padding-top: 5px;

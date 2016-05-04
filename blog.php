@@ -64,10 +64,12 @@
             $category = $row['category'];
             $submitter = $row['submitter'];
             echo "<h3>{$entryTitle}";
-            if(isset($_GET['$submitter'])) {
+
+            if(isset($_POST['$submitter'])) {
                 $submitter = $_GET['submitter'];
                 echo "<h3> by {$sumbitter}</h3>";
             }
+
             echo "<h4>{$category}</h4>";
             echo "<p>{$entrySummary}</p>";
             echo "<hr>";

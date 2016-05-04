@@ -110,7 +110,7 @@ main {
 
 
 /* FORM DISPLAY START */
-/*  */
+/* Align text to left, set the size of the area */
 label{
     display: inline-block;
     float: left;
@@ -119,20 +119,18 @@ label{
     text-align: left;
 }
 
+/* set the size of the input boxes */
 input {
     display: inline-block;
     float: left;
     width: 200px;
 }
 
-select {
-    width: 175px;
-}
-
-textarea {
+select, textarea {
     width: 200px;
 }
 
+/* Set size and position of Submit button */
 #submit{
     width: 100px;
     float: right;

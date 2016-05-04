@@ -83,6 +83,7 @@ main {
 #content {
     padding-right: 20px;
     padding-left: 20px;
+    width: 60%;
 }
 
 /* Image sizing */
@@ -91,7 +92,7 @@ main {
     padding-left: 10px;
     margin-top: 18px;
     float: left;
-    width: 200px;
+    width: 40px;
 }
 
 

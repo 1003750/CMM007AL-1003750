@@ -69,7 +69,7 @@ nav>ul>li a {
     text-align: center;
     padding: 5px 5px;
     text-decoration: none;
-    color: #374525;
+    color: #040c04;
 }
 
 /* Change the colour when hovering over link */
@@ -110,6 +110,11 @@ main {
 
 
 /* FORM DISPLAY START */
+#blogform{
+    margin-left: 25%;
+
+}
+
 /* Align text to left, set the size of the area */
 label{
     display: inline-block;

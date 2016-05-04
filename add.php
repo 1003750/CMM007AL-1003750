@@ -31,7 +31,7 @@
 
 <!-- MAIN START -->
 <main>
-    <section>
+    <section id="blogform">
         <?php
         //includes connection to the database
             include ("db_connect.php");

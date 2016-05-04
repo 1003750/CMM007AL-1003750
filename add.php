@@ -31,33 +31,57 @@
 
 <!-- MAIN START -->
 <main>
+    <section>
+        <?php
+        //includes connection to the database
+            include ("db_connect.php");
 
-    <!-- FORM START -->
-    <form>
-        <fieldset>
-            <label for="entryTitle">Entry Title</label>
-            <input type="text" name="entryTitle" required >
-            <br>
-            <label for="entrySummary">Entry Summary</label>
-            <textarea name="entrySummary" maxlength="500" required></textarea>
-            <br>
-            <label for="category">Category</label>
-            <select name="category" required>
-                <option value="">Select Category</option>
-                <option value="Work">Work</option>
-                <option value="University">University</option>
-                <option value="Family">Family</option>
-            </select>
-            <br>
-            <label for="submitter">Submitted By</label>
-            <input type="text" name="submitter">
-            <br>
-            <input type="submit" value="Submit" id="submit">
+            if ($_SERVER['REQUEST_METHOD'] === 'GET') {
+            ?>
+            <!-- FORM START -->
+            <form method="post" action="<?php $_SERVER['PHP_SELF']; ?>">
+                <fieldset>
+                    <label for="entryTitle">Entry Title</label>
+                    <input type="text" name="entryTitle" required>
+                    <br>
+                    <label for="entrySummary">Entry Summary</label>
+                    <textarea name="entrySummary" maxlength="500" required></textarea>
+                    <br>
+                    <label for="category">Category</label>
+                    <select name="category" required>
+                        <option value="">Select Category</option>
+                        <option value="Work">Work</option>
+                        <option value="University">University</option>
+                        <option value="Family">Family</option>
+                    </select>
+                    <br>
+                    <label for="submitter">Submitted By</label>
+                    <input type="text" name="submitter">
+                    <br>
+                    <input type="submit" value="Submit" id="submit">
+                </fieldset>
+            </form>
+            <!-- FORM END -->
+            <?
+            }
 
-        </fieldset>
-    </form>
-    <!-- FORM END -->
+            elseif ($_SERVER['REQUEST_METHOD'] === 'POST') {
+                $entryTitle = $_POST['entryTitle'];
+                $entrySummary = $_POST['entrySummary'];
+                $category = $_POST['category'];
+                $submitter = $_POST['submitter'];
 
+                $sql = "INSERT INTO blogview (entryTitle, entrySummary, category, submitter) VALUES ('$entryTitle', '$entrySummary', '$category', '$submitter')";
+
+                header('Location:blog.php');
+            }
+
+            else {
+                header('Location:index.php');
+            }
+
+        ?>
+    </section>
 </main>
 <!-- MAIN END -->
 

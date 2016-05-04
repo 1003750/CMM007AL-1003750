@@ -22,42 +22,47 @@ h1 {
 h2 {
     font-weight: 500;
     font-size: 20px;
-    margin: 0 0 40px 0;
+    margin: 0 0 40px 0; /*getting rid of space between h1 and h2*/
 }
 
-/* NAVIGATION START */
-#nav nav>ul {
+a {
+    font-weight: 400;
+    font-size: 18px;
+}
+
+
+/* body */
+p {
+    font-weight: 400;
+    font-size: 14px;
+}
+/* GENERAL TEXT STYLING END */
+
+/* NAVIGATION STYLING START */
+nav>ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
 }
 
-#nav nav>ul>li {
+nav>ul>li {
     float: left;
 }
 
-#nav nav>ul>li a {
+nav>ul>li a {
     display: block;
     color: #000000;
     text-align: center;
-    padding: 10px 30px;
+    padding: 5px 5px;
     text-decoration: none;
 }
 
-#nav li a:hover {
+li a:hover {
     color: #374525;
 }
 
-/* NAVIGATION END */
-
-/* body */
-p, a {
-    font-weight: 400;
-    font-size: 14px;
-}
-/* GENERAL TEXT STYLING END */
-
+/* NAVIGATION STYLING END */
 
 
 /* MAIN SECTION START */
@@ -70,6 +75,7 @@ main {
     flex-direction: row;
     justify-content: flex-start;
 }
+
 
 
 

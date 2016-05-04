@@ -22,12 +22,13 @@ h1 {
 h2 {
     font-weight: 500;
     font-size: 20px;
-    margin: 0 0 40px 0; /*getting rid of space between h1 and h2*/
+    margin: 0 0 0 0; /*getting rid of space between h1 and h2*/
 }
 
 a {
     font-weight: 400;
     font-size: 16px;
+    margin: 0 0 40px 0;
 }
 
 

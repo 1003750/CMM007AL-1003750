@@ -1,0 +1,88 @@
+/* GENERAL STYLING */
+/* Setting width of page, margins, background */
+body {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #A4BB83;
+}
+
+/* GENERAL TEXT STYLING START */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+/* Header */
+h1 {
+    font-weight: 700;
+    font-size: 25px;
+}
+
+h2 {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+/* NAVIGATION START */
+nav>ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav>ul>li {
+    float: left;
+}
+
+nav>ul>li a {
+    display: block;
+    color: #000000;
+    text-align: center;
+    padding: 10px 30px;
+    text-decoration: none;
+}
+
+li a:hover {
+    color: #374525;
+}
+
+/* NAVIGATION END */
+
+/* body */
+p, a {
+    font-weight: 400;
+    font-size: 14px;
+}
+/* GENERAL TEXT STYLING END */
+
+
+
+/* MAIN SECTION START */
+/* Ensuring text and image are displayed one another through the use of flex */
+main {
+    text-align: justify;
+    clear: both;
+    display: flex;
+    display: -webkit-flex; /*Safari*/
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+
+
+/* MAIN SECTION END */
+
+
+/* Image sizing */
+#blogimage {
+    margin-left: 18px;
+    margin-top: 18px;
+    float: left;
+    width: 50%;
+}
+
+
+
+
+
+/*  */

@@ -63,9 +63,9 @@
             $entrySummary = $row['entrySummary'];
             $category = $row['category'];
             $submitter = $row['submitter'];
-            echo "<h3>{$entryTitle}";
+            echo "<h3>{$entryTitle}</h3>";
 
-            if(isset($_POST['$submitter'])) {
+            if(isset([$_GET'$submitter'])) {
                 $submitter = $_GET['submitter'];
                 echo "<h3> by {$sumbitter}</h3>";
             }

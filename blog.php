@@ -51,21 +51,13 @@
             $entrySummary = $row['entrySummary'];
             $category = $row['category'];
             $submitter = $row['submitter'];
+            echo "<h3>{$entryTitle} by <h3>{$submitter}</h3>";
+            echo "<h4>{$category}</h4>";
+            echo "<p>{$entrySummary}</p>";
+            echo "<hr>";
         }
 
         ?>
-
-        <h3>Today at work by Adam</h3>
-        <h4>Work</h4>
-        <p>Today I went to work and did lots of very complicated coding things. I was very pleased that I managed to finish them all.</p>
-        <hr>
-
-
-
-
-
-
-
     </div>
     <!-- MAIN PARAGRAPH END -->
 </main>
